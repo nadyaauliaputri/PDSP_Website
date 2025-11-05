@@ -1,0 +1,30 @@
+.t4-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (max-width:768px){
+  .t4-section {padding-top:40px;padding-bottom:40px;}
+}
+/* ==== Tinggi area masthead (Slideshow CK) ==== */
+.t4-masthead,
+.t4-masthead .ck-slideshow,
+.t4-masthead #slideshowck {
+  height: 520px !important;     /* ubah sesuai kebutuhan */
+  min-height: 520px !important;
+  overflow: hidden;
+}
+.t4-masthead img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* pastikan gambar memenuhi area */
+}
+
+/* Responsive fallback */
+@media (max-width: 768px){
+  .t4-masthead,
+  .t4-masthead .ck-slideshow,
+  .t4-masthead #slideshowck {
+    height: 360px !important;
+    min-height: 360px !important;
+  }
+}
